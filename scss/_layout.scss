@@ -7,14 +7,14 @@
     max-width: 50rem;
 
     &__primary-heading {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         font-weight: 200;
-        margin-bottom: 1rem;
-    }
-
-    &__secondary-heading {
-        font-size: 2.5rem;
         margin-bottom: 2rem;
+
+        &--highlight {
+            font-weight: 600;
+            display: block;
+        }
     }
 
     @include respond(tablet) {
