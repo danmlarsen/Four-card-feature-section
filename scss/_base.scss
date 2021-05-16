@@ -1,0 +1,39 @@
+@use 'abstract' as *;
+
+// Base & Typography
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    background-color: $color-light-gray;
+
+    margin: 0 auto;
+    padding: 0 3rem;
+    padding-top: 8rem;
+
+    max-width: 1440px;
+    min-height: 100vh;
+}
+
+h1,h2,h3 {
+    color: $color-primary;
+    line-height: 1;
+    font-weight: 600;
+}
+
+p {
+    color: $color-secondary;
+}

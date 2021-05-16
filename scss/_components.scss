@@ -1,0 +1,49 @@
+@use 'abstract' as *;
+
+// Components
+.feature-box {
+    padding: 3rem;
+    background-color: $color-light-gray;
+    height: 25rem;
+    border-radius: 5px;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.25);
+
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+    }
+
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-position: bottom 3rem right 3rem;
+
+    // Modifiers
+    &,
+    &--cyan {
+        border-top: 5px solid $color-cyan;
+        background-image: url('../images/icon-supervisor.svg');
+    }
+    &--red {
+        border-top: 5px solid $color-red;
+        background-image: url('../images/icon-team-builder.svg');
+    }
+    &--orange {
+        border-top: 5px solid $color-orange;
+        background-image: url('../images/icon-karma.svg');
+    }
+    &--blue {
+        border-top: 5px solid $color-blue;
+        background-image: url('../images/icon-calculator.svg');
+    }
+
+    // Animations
+    transition: all .2s ease-out;
+    &:hover {
+        transform: scale(1.05) translateY(-1rem);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
+    }
+}
